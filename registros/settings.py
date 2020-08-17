@@ -90,10 +90,22 @@ WSGI_APPLICATION = 'registros.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'d143hoedjheqm2',
+        'USER': 'cdrliqwokrvuua',
+        'PASSWORD':'eeec42deecb1e0d3eb661ec1621b00fd359b3bfb4f2c5eb0c8be08215a981f49',
+        'HOST': 'ec2-107-20-15-85.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
 
 
 # Password validation
