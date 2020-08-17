@@ -29,7 +29,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 DEBUG = False
 
 #ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1','registrosh.herokuapp.com']
-ALLOWED_HOST = []
+ALLOWED_HOST = ['0.0.0.0', 'localhost', '127.0.0.1','registrosh.herokuapp.com']
 
 # Application definition
 
@@ -98,6 +98,9 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 #DATABASES = {
 #    'default': {
