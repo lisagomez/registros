@@ -34,6 +34,7 @@ ALLOWED_HOST = ['0.0.0.0', 'localhost', '127.0.0.1','registrosh.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'core.apps.CoreConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
